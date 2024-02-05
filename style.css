@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FontInter', sans-serif;
+}
+
+body {
+    background-color: #E8E8E8;
+    margin: auto;
+    max-width: 1440px;
+    min-width: 360px;
+}
+
+header {
+    float: left;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-one-contanier {
+    margin-top: 20px;
+}
+
+#input {
+    background-color: #E8E8E8;
+    resize: none;
+    border: none;
+    outline: none;
+    height: 67%;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #0A3871;
+}
+
+#input::placeholder {
+    color: #0A3871;
+}
+
+.botoes {
+    margin-top: 10px;
+}
+
+.botoes button {
+    margin: 0 15px 15px 0;
+    width: 45%;
+    padding: 12px 0;
+    border: 1px solid #0A3871;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+#criptografar {
+    background-color: #0A3871;
+    color: white;
+}
+
+#criptografar:hover {
+    background-color: white;
+    color: #0A3871;
+    transition: .3s;
+}
+
+#descriptografar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+#descriptografar:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: .3s;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    margin-top: 1.5rem;
+    height: 92vh;
+    border-radius: 24px;
+}
+
+.section-two-contanier {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 0 50px;
+}
+
+.section-two-contanier p {
+    font-size: max(.9rem , 1vw);
+}
+
+.section-two img {
+    display: block;
+    margin-top: 17vh;
+}
+
+#output {
+    display: none;
+    border: none;
+    resize: none;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+#botao-copiar {
+    display: none;
+    background-color: white;
+    color: #0A3871;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 12px 0;
+    width: 80%;
+    border: 1px solid #0A3871;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+#botao-copiar:hover  {
+    background-color: #0A3871;
+    color: white;
+    transition: .3s;
+}
+
+footer {
+    text-align: center;
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+/* Tablets */
+
+@media screen and (max-width: 1050px) {
+    header {
+        float: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .section-one {
+        height: 70vh;
+        width: 90%;
+        margin: auto;
+    }
+
+    .section-two {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #input {
+        margin-top: 5%;
+    }
+
+    #output {
+        margin-bottom: 10px;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .botoes button {
+    width: 45%;
+    padding: 17px 0;
+    }
+
+    #imagem {
+        display: none;
+    }
+
+    #botao-copiar {
+        margin-bottom: 0;
+    }
+}
+
+/* Celulares */
+
+@media screen and (max-width: 500px) {
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes button {
+        width: 100%;
+        padding: 17px 0;
+    }
+}

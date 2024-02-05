@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo alura">
+    </header>
+
+    <main>
+        <section class="section-one">
+            <textarea id="input" autofocus cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <div class="section-one-contanier">
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <div class="botoes">
+                    <button id="criptografar" onclick="criptografar()">Criptografar</button>
+                    <button id="descriptografar" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-two">
+            <div>
+                <img id="imagem" src="img/boneco.png" alt="texto vazio">
+                <div class="section-two-contanier">
+                    <h3 id="h3">Nenhuma mensagem encontrada</h3>
+                    <p id="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <textarea id="output" cols="20" rows="3" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            </div>
+            <button id="botao-copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a target="_blank" rel="external" href="https://www.linkedin.com/in/natalia-silva-developer/">Natália Silva</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
